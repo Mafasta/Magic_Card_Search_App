@@ -1,2 +1,25 @@
 Name: Thomas Quinn Langsfeld
-GitHub link:  
+GitHub link:  https://github.com/Mafasta/Magic_Card_Search_App
+
+Title: Magic: The Gathering Search App
+
+Description: A website service for searching and displaying Magic: The Gathering trading cards.  Users will be able to search for specific cards as well as manage a collection of favorites and decks.  We will set up for one client only.
+
+Actors: admin, user
+
+Functionality:
+	0. Users, admins can search for cards
+	1. Users can sign up
+	2. Users, admins can log in
+	3. Admin can update site card list
+	4. Admin can add new admins
+	5. Users can add cards to their favorite list
+	6. Users can remove cards from their favorite list
+	7. Users can create new deck lists
+	8. Users can add cards to a deck list
+	9. Users can remove cards from a deck list
+	10. Admin can deactivate a user
+
+[OPTIONAL] Stretch Functionality:
+	11. Users can create fake cards
+	12. Admin can delete delete fake cards
