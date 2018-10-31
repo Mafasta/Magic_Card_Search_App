@@ -1,0 +1,8 @@
+<div>
+	<%= @mtg_cards.each do |card| %>
+	  <div>
+	    <strong>Name:</strong> <%= card.name %>
+	    <strong>Description:</strong> <%= card.description %>
+	  </div>
+	<% end %>
+</div>

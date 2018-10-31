@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get 'profile/index'
+  devise_for :users
+  devise_for :admins
 
-  root 'profile#index'
+  resources :mtg_card
+  resources :admin
+  
+  root 'mtg_card#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
