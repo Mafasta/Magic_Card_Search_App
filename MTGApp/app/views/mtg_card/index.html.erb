@@ -1,8 +1,18 @@
 <div>
+  <%= form_tag('/mtg_card', method: :get) do %>
+    <%= label_tag(:card_name, 'Enter Card Name') %>
+    <%= text_field_tag(:card_name) %>
+    <%= submit_tag('Search') %>
+  <% end %>
+</div>
+
+
+<div>
 	<%= @mtg_cards.each do |card| %>
-	  <div>
+	  <p>
 	    <strong>Name:</strong> <%= card.name %>
 	    <strong>Description:</strong> <%= card.description %>
-	  </div>
+	    <strong>Set:</strong> <%= card.mtg_set.name %>
+	  </ps>
 	<% end %>
 </div>
