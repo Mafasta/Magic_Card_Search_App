@@ -1,0 +1,2 @@
+class DeckList < CardList
+end

@@ -9,10 +9,8 @@
 
 <div>
 	<%= @mtg_cards.each do |card| %>
-	  <p>
 	    <strong>Name:</strong> <%= card.name %>
 	    <strong>Description:</strong> <%= card.description %>
 	    <strong>Set:</strong> <%= card.mtg_set.name %>
-	  </ps>
 	<% end %>
 </div>

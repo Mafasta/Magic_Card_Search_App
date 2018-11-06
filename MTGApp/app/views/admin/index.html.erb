@@ -1,1 +1,7 @@
 <h1>Admin</h1>
+<div>
+	<%= @users.each do |user| %>
+		<%= user.email %>
+	<% end %>
+</div>
+

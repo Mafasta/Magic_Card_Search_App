@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181030234441) do
+ActiveRecord::Schema.define(version: 20181106025914) do
+
+  create_table "card_lists", force: :cascade do |t|
+    t.string "type"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_card_lists_on_user_id"
+  end
 
   create_table "general_users", force: :cascade do |t|
     t.string "type"

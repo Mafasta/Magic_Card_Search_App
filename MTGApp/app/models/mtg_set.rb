@@ -1,3 +1,3 @@
 class MtgSet < ApplicationRecord
-	has_one :mtg_card
+	has_many :mtg_card
 end

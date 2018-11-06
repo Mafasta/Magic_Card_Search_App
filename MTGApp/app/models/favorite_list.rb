@@ -1,0 +1,2 @@
+class FavoriteList < CardList
+end
