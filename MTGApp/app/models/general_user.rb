@@ -6,5 +6,5 @@ class GeneralUser < ApplicationRecord
 
   validates :type, presence: true
 
-  has_many :card_list
+  has_many :card_lists
 end

@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181106025914) do
+ActiveRecord::Schema.define(version: 20181109013518) do
 
   create_table "card_lists", force: :cascade do |t|
     t.string "type"
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_card_lists_on_user_id"
+    t.integer "general_user_id"
+    t.index ["general_user_id"], name: "index_card_lists_on_general_user_id"
   end
 
   create_table "general_users", force: :cascade do |t|
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 20181106025914) do
     t.datetime "remember_created_at"
     t.index ["email"], name: "index_general_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_general_users_on_reset_password_token", unique: true
+  end
+
+  create_table "list_cards", force: :cascade do |t|
+    t.integer "mtg_card_id"
+    t.integer "card_list_id"
+    t.index ["card_list_id"], name: "index_list_cards_on_card_list_id"
+    t.index ["mtg_card_id"], name: "index_list_cards_on_mtg_card_id"
   end
 
   create_table "mtg_cards", force: :cascade do |t|

@@ -12,6 +12,6 @@ class MtgSetController < ApplicationController
 		new_card = MtgCard.create!(name: card.name, description: card.text, mtg_set_id: set.id)
 	end
 
-	redirect_to '/mtg_set/new'
+	redirect_to '/mtg_card'
   end
 end
