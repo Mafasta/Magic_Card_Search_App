@@ -9,7 +9,7 @@ RUN mkdir -p /MTGApp
 WORKDIR /MTGApp
 
 COPY Gemfile Gemfile.lock ./
-RUN gem install bundler && bundle package && bundle install --jobs 20 --retry 5
+RUN gem install bundler && bundle install --jobs 20 --retry 5
 
 COPY . ./
 

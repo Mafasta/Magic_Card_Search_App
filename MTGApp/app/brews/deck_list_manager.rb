@@ -1,5 +1,5 @@
 class DeckListManager < CardListManager
 	def order_list
-		##TODO: Implement sorting of list
+		@cards = @cards.order(:cmc)
 	end
 end

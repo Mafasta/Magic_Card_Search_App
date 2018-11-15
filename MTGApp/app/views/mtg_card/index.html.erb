@@ -11,6 +11,8 @@
 	<%= @mtg_cards.each do |card| %>
 	    <strong>Name:</strong> <%= card.name %>
 	    <strong>Description:</strong> <%= card.description %>
+	    <strong>Converted Mana Cost:</strong> <%= card.cmc %>
 	    <strong>Set:</strong> <%= card.mtg_set.name %>
+	    <br/>
 	<% end %>
 </div>

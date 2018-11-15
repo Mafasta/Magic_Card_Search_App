@@ -3,6 +3,7 @@ class CreateMtgCards < ActiveRecord::Migration[5.1]
     create_table :mtg_cards do |t|
       t.string :name
       t.text :description
+      t.integer :cmc
       t.references :mtg_set, foreign_key: true
     end
   end

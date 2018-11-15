@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20181109013518) do
   create_table "mtg_cards", force: :cascade do |t|
     t.string "name"
     t.text "description"
+    t.integer "cmc"
     t.integer "mtg_set_id"
     t.index ["mtg_set_id"], name: "index_mtg_cards_on_mtg_set_id"
   end

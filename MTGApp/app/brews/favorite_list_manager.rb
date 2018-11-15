@@ -1,5 +1,5 @@
 class FavoriteListManager < CardListManager
 	def order_list
-		##TODO: Implement sorting of list
+		@cards = @cards.order(:name)
 	end
 end
