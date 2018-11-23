@@ -1,32 +1,25 @@
+# @author Thomas Quinn Langsfeld
 class CardListManager
+	# Abstract Class
+	# @return [NotImplementedError] the error message
 	def initialize
-		@cards = nil
+		raise NotImplementedError.new("#{self.class.name} is an abstract class.")
 	end
 	
+	# @param list_id [Integer] the CardList id
+	# @return [MtgCard] the MtgCard list
 	def fetch_list(list_id)
 		@cards = MtgCard.cards_from_list(list_id)
 	end
-	def filter_list(cards = nil)
-		##TODO: Format input/parameters. Implement this method
-	end
 
+	# implemented by sublcasses
 	def order_list
-		##TODO: Format input/parameters. Implement this method
 	end
 
-	def print_list
-		@cards.each do |card|
-			puts card.name
-		end
-	end
-
-	def manage_list(list_id, cards = nil)
+	# @param list_id [Integer] the CardList id
+	# @return [MtgCard] the ordered MtgCard list
+	def manage_list(list_id)
 		fetch_list(list_id)
-		filter_list(cards)
 		order_list
-		print_list
 	end
-
-	private
-
 end

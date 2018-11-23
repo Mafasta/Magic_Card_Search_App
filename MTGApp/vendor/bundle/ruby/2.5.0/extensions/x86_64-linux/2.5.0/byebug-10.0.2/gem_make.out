@@ -1,0 +1,19 @@
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+/home/user/.rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20181114-4266-1x5glev.rb extconf.rb
+creating Makefile
+
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20181114-4266-bhyyue/byebug

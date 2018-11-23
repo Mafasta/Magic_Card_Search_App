@@ -1,0 +1,15 @@
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/home/user/.rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20181114-4266-1jba2fi.rb extconf.rb
+creating Makefile
+
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/user/Dropbox/School/FinalSemester/OOD/Project/Magic_Card_Search_App/MTGApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20181114-4266-w9jujq/bindex

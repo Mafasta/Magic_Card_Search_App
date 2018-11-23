@@ -1,6 +1,7 @@
 <h1>Admin</h1>
 <div>
 	<%= @users.each do |user| %>
+		<%= user.type %>
 		<%= user.email %>
 	<% end %>
 </div>
