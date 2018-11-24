@@ -1,4 +1,5 @@
 class UserProfileController < ApplicationController
+	# compiles deck and favorite lists for a GeneralUser
 	def show
 		@deck_list = DeckList.where(general_user_id: params[:id]).first
 		@favorite_list = FavoriteList.where(general_user_id: params[:id]).first

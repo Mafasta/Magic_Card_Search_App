@@ -1,3 +1,5 @@
+# @author Thomas Quinn Langsfeld
+# a CardList
 class CardList < ApplicationRecord
 	#self.abstract_class = true
 	belongs_to :general_user

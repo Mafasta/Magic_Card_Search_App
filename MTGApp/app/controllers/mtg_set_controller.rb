@@ -1,6 +1,7 @@
 class MtgSetController < ApplicationController
-  #before_action :authenticate_admin!
+  before_action :authenticate_admin!
 
+  # queries MTGApi for a specific set and persists the result to the database
   def create
   	new_set = MTG::Set.find(params[:set_code])
 

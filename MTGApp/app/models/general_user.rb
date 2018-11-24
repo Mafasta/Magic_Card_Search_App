@@ -1,3 +1,5 @@
+# @author Thomas Quinn Langsfeld
+# a general user
 class GeneralUser < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
