@@ -1,7 +1,9 @@
+<%= link_to('Profile','/user_profile/1') %>
 <div>
   <%= form_tag('/mtg_card', method: :get) do %>
     <%= label_tag(:card_name, 'Enter Card Name') %>
     <%= text_field_tag(:card_name) %>
+    <%= hidden_field_tag(:user_id, 1) %>
     <%= submit_tag('Search') %>
   <% end %>
 </div>
